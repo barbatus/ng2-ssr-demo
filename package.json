@@ -1,6 +1,6 @@
 {
   "dependencies": {
-    "angular2": "2.0.0-beta.12",
+    "angular2": "2.0.0-beta.15",
     "angular2-meteor": "https://github.com/barbatus/angular2-meteor",
     "angular2-meteor-auto-bootstrap": "https://github.com/barbatus/angular2-meteor-auto-bootstrap",
     "angular2-meteor-universal": "https://github.com/barbatus/angular2-meteor-universal", 
