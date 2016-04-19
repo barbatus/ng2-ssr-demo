@@ -4,7 +4,7 @@
     "angular2-meteor": "https://github.com/barbatus/angular2-meteor",
     "angular2-meteor-auto-bootstrap": "https://github.com/barbatus/angular2-meteor-auto-bootstrap",
     "angular2-meteor-universal": "https://github.com/barbatus/angular2-meteor-universal",
-    "angular2-universal": "^0.90.1",    
+    "angular2-universal": ">=0.90.1",    
     "rxjs": "5.0.0-beta.2"
   },
   "license": "MIT"
