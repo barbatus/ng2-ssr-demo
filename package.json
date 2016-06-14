@@ -6,6 +6,7 @@
     "angular2-meteor": "https://github.com/urigo/angular2-meteor",
     "angular2-meteor-auto-bootstrap": "https://github.com/urigo/angular2-meteor-auto-bootstrap",
     "angular2-meteor-universal": "https://github.com/barbatus/angular2-meteor-universal",
+    "angular2-meteor-polyfills": "^0.1.1",
     "es6-shim": "^0.35.0",
     "reflect-metadata": "0.1.2",
     "rxjs": "5.0.0-beta.6",

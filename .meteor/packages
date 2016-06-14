@@ -17,6 +17,7 @@ ecmascript              # Enable ECMAScript2015+ syntax in app code
 insecure                # Allow all DB writes from clients (for prototyping)
 angular2-compilers
 standard-minifier-css
+standard-minifier-js
 barbatus:angular2-runtime
 kadira:flow-router-ssr
 accounts-password
