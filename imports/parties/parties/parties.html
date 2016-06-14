@@ -1,0 +1,18 @@
+<header>
+  <party-form></party-form>
+  <div>
+    <input type="text" #searchtext placeholder="Search by Location">
+    <input type="button" value="Search" (click)="searchLocation(searchtext.value)">
+    (Palo Alto or Mountain View)
+    {{'foo'}}
+  </div>
+</header>
+<main>
+  <ul>
+    <li *ngFor="let party of parties">
+      <a [routerLink]="['PartyDetails', {partyId: party._id}]" target="_top">{{party.name}}</a>
+      <p>Where: {{party.location}}</p>
+      <p>About: {{party.description}}</p>
+    </li>
+  </ul>
+</main>

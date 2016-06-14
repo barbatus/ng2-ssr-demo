@@ -1,10 +1,15 @@
 {
   "dependencies": {
-    "angular2": "2.0.0-beta.15",
-    "angular2-meteor": "https://github.com/barbatus/angular2-meteor",
-    "angular2-meteor-auto-bootstrap": "https://github.com/barbatus/angular2-meteor-auto-bootstrap",
-    "angular2-meteor-universal": "https://github.com/barbatus/angular2-meteor-universal", 
-    "parse5": "^1.5.0"
+    "@angular/common": "2.0.0-rc.1",
+    "@angular/core": "2.0.0-rc.1",
+    "@angular/router-deprecated": "2.0.0-rc.1",
+    "angular2-meteor": "https://github.com/urigo/angular2-meteor",
+    "angular2-meteor-auto-bootstrap": "https://github.com/urigo/angular2-meteor-auto-bootstrap",
+    "angular2-meteor-universal": "https://github.com/barbatus/angular2-meteor-universal",
+    "es6-shim": "^0.35.0",
+    "reflect-metadata": "0.1.2",
+    "rxjs": "5.0.0-beta.6",
+    "zone.js": "^0.6.12"
   },
   "license": "MIT"
 }

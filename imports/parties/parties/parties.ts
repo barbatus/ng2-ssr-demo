@@ -1,10 +1,11 @@
 'use strict';
 
-import {Component} from 'angular2/core';
+import {Component} from '@angular/core';
 
-import {ROUTER_DIRECTIVES} from 'angular2/router';
+import {ROUTER_DIRECTIVES} from '@angular/router-deprecated';
 
-import '../party-form/party-form.ts';
+import {Mongo} from 'meteor/mongo';
+import {ReactiveVar} from 'meteor/reactive-var';
 
 import {PartyForm} from '../party-form/party-form';
 
@@ -14,30 +15,22 @@ import {Parties} from '../../../parties';
 
 @Component({
   selector: 'parties',
-  templateUrl: 'imports/parties/templates/parties.html',
+  templateUrl: '/imports/parties/parties/parties.html',
   directives: [ROUTER_DIRECTIVES, PartyForm]
 })
 export class PartiesCmp extends MeteorComponent {
-  parties: Mongo.Cursor<Party>;
-  location: ReactiveVar<String>;
+  protected parties: Mongo.Cursor<Party>;
+  protected location: ReactiveVar<String>;
 
   constructor() {
     super();
+
     this.subscribe('parties', 'Palo Alto');
     this.location = new ReactiveVar('Palo Alto');
 
     this.autorun(() => {
       var selector = { location: this.location.get() };
       this.parties = Parties.find(selector);
-    }, true);
-  }
-
-  searchLocation(location) {
-    this.subscribe('parties', location, () => {
-      if (!this.parties.count()) {
-        alert('Nothing found');
-      }
     });
-    this.location.set(location);
   }
 }
